@@ -101,7 +101,3 @@ Token counting prefers the official xAI tokenizer endpoint. On failure it falls 
 - Token counting is performed on every turn (can be optimized with caching)
 - No streaming, tool calling, or multimodal support
 - API key handling should be improved for production use
-
-## License
-
-MIT
