@@ -113,7 +113,3 @@ Token counting uses xAI’s official `/tokenize-text` endpoint. If the request f
 - No conversation persistence across Streamlit restarts.
 - No streaming responses, tool calling, or multimodal support in this version.
 - The `os.getenv` line in the original code is incorrect (it passes the key string itself instead of the variable name).
-
-## License
-
-MIT
