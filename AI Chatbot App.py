@@ -3,10 +3,9 @@ import requests
 from openai import OpenAI
 import streamlit as st
 
-api_key = os.getenv("xai-Dche097f8t4wm3FkZo50CERn992rk401PfEgwBjKDdQnmyQr3MeLsEyvCxmeAidUEkCjZ2b5iq1Dp9q4")
+api_key = st.secrets["OPENAI_API_KEY"] or os.getenv("OPENAI_API_KEY")
 
-client = OpenAI(api_key="xai-Dche097f8t4wm3FkZo50CERn992rk401PfEgwBjKDdQnmyQr3MeLsEyvCxmeAidUEkCjZ2b5iq1Dp9q4",
-                base_url="https://api.x.ai/v1")
+client = OpenAI(api_key=api_key, base_url="https://api.x.ai/v1")
 
 MODEL = "grok-4.5"
 TEMPERATURE = 0.7
